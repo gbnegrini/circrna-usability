@@ -1,0 +1,19 @@
+### STAR   --runMode genomeGenerate      --runThreadN 4   --genomeDir /circrna-usability/data/index/star/   --genomeFastaFiles /circrna-usability/data/reference/genome.fa      --genomeSAindexNbases 7   --sjdbGTFfile /circrna-usability/data/annotation/annotation.gtf
+### GstrandBit 32
+versionGenome	2.7.4a
+genomeType	Full
+genomeFastaFiles	/circrna-usability/data/reference/genome.fa 
+genomeSAindexNbases	7
+genomeChrBinNbits	18
+genomeSAsparseD	1
+genomeTransformType	None
+genomeTransformVCF	-
+sjdbOverhang	100
+sjdbFileChrStartEnd	- 
+sjdbGTFfile	/circrna-usability/data/annotation/annotation.gtf
+sjdbGTFchrPrefix	-
+sjdbGTFfeatureExon	exon
+sjdbGTFtagExonParentTranscript	transcript_id
+sjdbGTFtagExonParentGene	gene_id
+sjdbInsertSave	Basic
+genomeFileSizes	539162 1449801

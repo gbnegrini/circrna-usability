@@ -1,0 +1,81 @@
+STAR version=2.7.9a
+STAR compilation time,server,dir=2021-05-13T22:12:30+00:00 a5b63571d5c7:/circrna-usability/circRNA_finder/STAR-2.7.9a/source
+##### Command Line:
+STAR --runThreadN 4 --runMode genomeGenerate --genomeDir /circrna-usability/data/index/star/ --genomeFastaFiles /circrna-usability/data/reference/genome.fa --sjdbGTFfile /circrna-usability/data/annotation/annotation.gtf --genomeSAindexNbases 7
+##### Initial USER parameters from Command Line:
+###### All USER parameters from Command Line:
+runThreadN                    4     ~RE-DEFINED
+runMode                       genomeGenerate        ~RE-DEFINED
+genomeDir                     /circrna-usability/data/index/star/     ~RE-DEFINED
+genomeFastaFiles              /circrna-usability/data/reference/genome.fa        ~RE-DEFINED
+sjdbGTFfile                   /circrna-usability/data/annotation/annotation.gtf     ~RE-DEFINED
+genomeSAindexNbases           7     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runMode                           genomeGenerate   
+runThreadN                        4
+genomeDir                         /circrna-usability/data/index/star/
+genomeFastaFiles                  /circrna-usability/data/reference/genome.fa   
+genomeSAindexNbases               7
+sjdbGTFfile                       /circrna-usability/data/annotation/annotation.gtf
+
+-------------------------------
+##### Final effective command line:
+STAR   --runMode genomeGenerate      --runThreadN 4   --genomeDir /circrna-usability/data/index/star/   --genomeFastaFiles /circrna-usability/data/reference/genome.fa      --genomeSAindexNbases 7   --sjdbGTFfile /circrna-usability/data/annotation/annotation.gtf
+----------------------------------------
+
+Number of fastq files for each mate = 1
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+Finished loading and checking parameters
+--genomeDir directory exists and will be overwritten: /circrna-usability/data/index/star/
+May 16 19:51:30 ... starting to generate Genome files
+/circrna-usability/data/reference/genome.fa : chr # 0  "CFLAR" chrStart: 0
+/circrna-usability/data/reference/genome.fa : chr # 1  "HIPK3" chrStart: 262144
+Chromosome sequence lengths: 
+CFLAR	60582
+HIPK3	100351
+Genome sequence total length = 160933
+Genome size with padding = 524288
+May 16 19:51:30 ..... processing annotations GTF
+Processing pGe.sjdbGTFfile=/circrna-usability/data/annotation/annotation.gtf, found:
+		58 transcripts
+		317 exons (non-collapsed)
+		74 collapsed junctions
+Total junctions: 74
+May 16 19:51:30 ..... finished GTF processing
+
+Estimated genome size with padding and SJs: total=genome+SJ=201524288 = 524288 + 201000000
+GstrandBit=32
+Number of SA indices: 321866
+May 16 19:51:30 ... starting to sort Suffix Array. This may take a long time...
+Number of chunks: 4;   chunks size limit: 858304 bytes
+May 16 19:51:30 ... sorting Suffix Array chunks and saving them to disk...
+Writing 44720 bytes into /circrna-usability/data/index/star//SA_3 ; empty space on disk = 75422756864 bytes ... done
+Writing 824336 bytes into /circrna-usability/data/index/star//SA_2 ; empty space on disk = 75422711808 bytes ...Writing 858104 bytes into /circrna-usability/data/index/star//SA_1 ; empty space on disk = 75422253056 bytes ...Writing 847768 bytes into /circrna-usability/data/index/star//SA_0 ; empty space on disk = 75421270016 bytes ...Writing 847768 bytes into /circrna-usability/data/index/star//SA_0 ; empty space on disk = 75421270016 bytes ... done
+ done
+ done
+May 16 19:51:30 ... loading chunks from disk, packing SA...
+May 16 19:51:30 ... finished generating suffix array
+May 16 19:51:30 ... generating Suffix Array index
+May 16 19:51:30 ... completed Suffix Array index
+May 16 19:51:30   Finished preparing junctions
+May 16 19:51:30 ..... inserting junctions into the genome indices
+May 16 19:51:30   Finished SA search: number of new junctions=74, old junctions=0
+May 16 19:51:30   Finished sorting SA indicesL nInd=29600
+Genome size with junctions=539162  524288   14874
+GstrandBit1=32   GstrandBit=32
+May 16 19:51:30   Finished inserting junction indices
+May 16 19:51:30   Finished SAi
+May 16 19:51:30 ..... finished inserting junctions into genome
+May 16 19:51:30 ... writing Genome to disk ...
+Writing 539162 bytes into /circrna-usability/data/index/star//Genome ; empty space on disk = 75422752768 bytes ... done
+SA size in bytes: 1449801
+May 16 19:51:30 ... writing Suffix Array to disk ...
+Writing 1449801 bytes into /circrna-usability/data/index/star//SA ; empty space on disk = 75422752768 bytes ... done
+May 16 19:51:30 ... writing SAindex to disk
+Writing 8 bytes into /circrna-usability/data/index/star//SAindex ; empty space on disk = 75422752768 bytes ... done
+Writing 64 bytes into /circrna-usability/data/index/star//SAindex ; empty space on disk = 75422752768 bytes ... done
+Writing 95571 bytes into /circrna-usability/data/index/star//SAindex ; empty space on disk = 75422752768 bytes ... done
+May 16 19:51:30 ..... finished successfully
+DONE: Genome generation, EXITING
