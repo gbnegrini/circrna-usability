@@ -11,7 +11,7 @@ A small test dataset of *Homo sapiens* data is provided, including reference gen
 |   │   ├── bowtie
 |   │   ├── bowtie2
 |   │   ├── bwa
-|   │   └── bowtie
+|   │   └── star
 │   ├── reads
 │   └── reference
 │   
