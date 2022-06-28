@@ -1,5 +1,6 @@
 # Usability evaluation of circRNA tools
-> This repository contains files to reproduce the heuristic evaluation environment described in the manuscript *"Usability evaluation of circRNA identification tools: development of a heuristic-based framework and analysis"* (under review).
+> This repository contains files to reproduce the heuristic evaluation environment described in the paper *"Usability evaluation of circRNA identification tools: Development of a heuristic-based framework and analysis"*.
+> [Link to article](https://doi.org/10.1016/j.compbiomed.2022.105785).
 
 ## Contents
 A small test dataset of *Homo sapiens* data is provided, including reference genome, annotation, one paired-ended library, and genome indexes (bowtie, bowtie2, bwa, STAR). Genome, annotation, and RNA-Seq data were originally obtained from [CirComPara](https://github.com/egaffo/CirComPara) test data. We also provide support scripts to install some libraries and packages.
@@ -42,3 +43,6 @@ This command will create a container running an interactive shell in a Ubuntu 18
 ### Perform the heuristic evaluation
 
 Download and install a circRNA tool inside the container system. Perform your heuristic evaluation and fill the [evaluation sheet](evaluation_sheet.odt).
+
+## Citation
+Guilherme Bauer-Negrini, Guilherme Cordenonsi da Fonseca, Carmem Gottfried, Juliana Herbert. Usability evaluation of circRNA identification tools: Development of a heuristic-based framework and analysis. Computers in Biology and Medicine, 2022, 105785, ISSN 0010-4825, https://doi.org/10.1016/j.compbiomed.2022.105785.
